@@ -1,0 +1,142 @@
+body {
+    font-family: 'IBM Plex Mono';
+    background: #fdfafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.nav-bar {
+    background-color: #3677e0;
+    overflow: hidden;
+}
+
+.center-title {
+    padding: 5%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #C6C3C3;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    background-color: #C6C3C3;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 30px;
+    border: none;
+    background-color: #C6C3C3;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f4f2;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+}
+
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-detail img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail > div {
+    flex: 1;
+}
+
+.book-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.book-detail p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.book-detail-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h3 {
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-card p {
+    margin: 10px 0 0;
+    font-size: 0.95rem;
+    color: #333;
+}

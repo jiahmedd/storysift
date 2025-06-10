@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ book.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>StorySift</h1>
+    </div>
+    <a href="{{ url_for('index') }}">← Back to Search Results</a>
+
+    <div class="book-detail">
+        <div class="book-detail-container">
+            <img src="{{ book.image_url or '/static/placeholder.png' }}" alt="{{ book.title }}">
+            <div>
+                <h2>{{ book.title }}</h2>
+                <p><strong>{{ book.authors }}</strong></p>
+                <p>{{ book.description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <h3>Similar Books</h3>
+<div class="grid hover-expand">
+    {% for rec in recommendations %}
+    <a href="{{ url_for('book_detail', title=rec.title|replace(' ', '_')) }}">
+        <div class="book-card">
+            <img src="{{ rec.image_url or '/static/placeholder.png' }}" alt="{{ rec.title }}">
+            <p>{{ rec.title }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+</body>
+
+</html>
